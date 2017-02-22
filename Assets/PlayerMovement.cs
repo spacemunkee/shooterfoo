@@ -9,13 +9,14 @@ public class PlayerMovement : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		RotationUpdate ();
-		VerticalMovementUpdate ();
+		RotationUpdate (); // rotation must come first
+		MovementUpdate ();
 	}
 
-	void VerticalMovementUpdate() {
+	void MovementUpdate() {
 		Vector3 position = transform.position;
-		position.y += Input.GetAxis ("Vertical") * playerSpeed * Time.deltaTime;
+		Vector3 velocity = new Vector3(0, Input.GetAxis ("Vertical") * playerSpeed * Time.deltaTime, 0);
+		position += transform.rotation * velocity;
 		transform.position = position;
 	}
 
