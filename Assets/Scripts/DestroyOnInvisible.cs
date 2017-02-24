@@ -5,6 +5,7 @@ using UnityEngine;
 public class DestroyOnInvisible : MonoBehaviour {
 
 	void OnBecameInvisible() {
-		Destroy (gameObject);
+		Debug.Log ("Removing gameObject");
+		DestroyObject(gameObject);
 	}
 }
