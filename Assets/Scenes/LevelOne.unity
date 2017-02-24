@@ -91,6 +91,48 @@ NavMeshSettings:
     cellSize: 0.16666667
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &267120745
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1233973600}
+    m_Modifications:
+    - target: {fileID: 4145751486968032, guid: 666ee2a0a5f2a474db99cb6791053dd9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145751486968032, guid: 666ee2a0a5f2a474db99cb6791053dd9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145751486968032, guid: 666ee2a0a5f2a474db99cb6791053dd9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145751486968032, guid: 666ee2a0a5f2a474db99cb6791053dd9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145751486968032, guid: 666ee2a0a5f2a474db99cb6791053dd9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145751486968032, guid: 666ee2a0a5f2a474db99cb6791053dd9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145751486968032, guid: 666ee2a0a5f2a474db99cb6791053dd9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145751486968032, guid: 666ee2a0a5f2a474db99cb6791053dd9, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 666ee2a0a5f2a474db99cb6791053dd9, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1109693257
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,7 +143,6 @@ GameObject:
   - component: {fileID: 1109693259}
   - component: {fileID: 1109693258}
   - component: {fileID: 1109693260}
-  - component: {fileID: 1109693261}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -151,7 +192,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1109693257}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -165,54 +206,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1109693257}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e6c4d085e4874f19aa4267e925c0f72, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bb15dc16913443dba51652bd491c0b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 10
-  rotationSpeed: 180
---- !u!114 &1109693261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1109693257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42f64dbdd1bd44f9484e7dcb45991ff7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waves: []
-  spawnPoints: []
-  timeBetweenWaves: 5
-  waveCountdown: 0
---- !u!1 &1122706624
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1122706625}
-  m_Layer: 0
-  m_Name: EnemySpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1122706625
+--- !u!4 &1122706625 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1122706624}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.37, y: 2.06, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1233973600}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_PrefabParentObject: {fileID: 4145751486968032, guid: 666ee2a0a5f2a474db99cb6791053dd9,
+    type: 2}
+  m_PrefabInternal: {fileID: 267120745}
 --- !u!1 &1233973598
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,17 +243,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - name: Wave 1
-    enemy: {fileID: 4242231386007804, guid: 4f169ca383e1148bebba0f99ed930813, type: 2}
+    enemy: {fileID: 4634310858341274, guid: 7e48a6da0a99a4aefbadf04480d6fc66, type: 2}
     count: 2
-    rate: 2
-  - name: Wave 2
-    enemy: {fileID: 4242231386007804, guid: 4f169ca383e1148bebba0f99ed930813, type: 2}
-    count: 3
-    rate: 2
-  - name: Wave 3
-    enemy: {fileID: 4242231386007804, guid: 4f169ca383e1148bebba0f99ed930813, type: 2}
-    count: 5
     rate: 3
+  - name: Wave 2
+    enemy: {fileID: 4634310858341274, guid: 7e48a6da0a99a4aefbadf04480d6fc66, type: 2}
+    count: 7
+    rate: 2
   spawnPoints:
   - {fileID: 1122706625}
   timeBetweenWaves: 5
