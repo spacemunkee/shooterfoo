@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 1109693259}
   - component: {fileID: 1109693258}
   - component: {fileID: 1109693260}
+  - component: {fileID: 1109693261}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -209,6 +210,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb15dc16913443dba51652bd491c0b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1109693261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1109693257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab859e5b89bf84214b6a695d69d052f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 1928115577260948, guid: f4ad330c04ee647c388307d30b435706, type: 2}
+  shootRate: 0.25
 --- !u!4 &1122706625 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4145751486968032, guid: 666ee2a0a5f2a474db99cb6791053dd9,
